@@ -1,11 +1,16 @@
 set nocompatible
 set guifont=Monospace\ 15
 set number 
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+nnoremap <S-j> :tabprevious<CR>
+nnoremap <S-k> :tabnext<CR>
+nnoremap <S-q> :q!<CR>
 nnoremap <C-s> :w<CR>
-nnoremap <C-w> :q<CR>
 nnoremap <C-o> :NERDTree<CR>
+nnoremap <up> <C-w><up> 
+nnoremap <down> <C-w><down> 
+nnoremap <left> <C-w><left> 
+nnoremap <right> <C-w><right> 
+nnoremap q :q<CR>
 :imap jj <Esc>
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
