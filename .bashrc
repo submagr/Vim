@@ -113,8 +113,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias vmssh='gnome-terminal --tab -e "sshpass -p CyberSecurity ssh httpd@172.16.174.128" --tab -e "sshpass -p CyberSecurity ssh httpd@172.16.174.128" --tab -e "sshpass -p CyberSecurity ssh httpd@172.16.174.128" && exit'
+alias vmssh='gnome-terminal --tab -e "sshpass -p cse425 ssh cse425@127.0.1.1 -p 6000" --tab -e "sshpass -p cse425 ssh cse425@127.0.1.1 -p 6000" --tab -e "sshpass -p cse425 ssh cse425@127.0.1.1 -p 6000" && exit'
 
 alias yo='gvim && nautilus &&  nohup google-chrome "bing.com" "noproxy.iitk.ac.in" "gmail.com" > /dev/null 2>&1 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=bllmngcdibgbgjnginpehneeofhbmdjm && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki && clear'
 
 alias dev='cd ~/Desktop/Developement/'
+
+# added by Anaconda2 4.1.1 installer
+export PATH="/home/subm/anaconda2/bin:$PATH"
