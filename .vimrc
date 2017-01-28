@@ -1,8 +1,6 @@
 " ======== Globals ==================
 set foldmethod=indent " Default indent
 set nocompatible
-set guifont=Monospace\ 15
-set number 
 
 " ======== Key-Mappings ===============
 nnoremap <S-j> :tabprevious<CR>
@@ -18,11 +16,29 @@ nnoremap q :q<CR>
 imap jj <Esc>
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
+nnoremap <tab> % " Matching bracket pairs
+vnoremap <tab> %
 
 " ======== Setting Tab Size =========
-set tabstop=4 " size of a hard tabstop
-set shiftwidth=4 " size of an "indent"
-set softtabstop=4
+" Always do shiftwidth == softtabstop
+set tabstop=4 " Width of tab character
+set shiftwidth=4 " This sets the behavior of > command, i.e., shifting right
+set softtabstop=4 " This sets the behavior of backsapce command, i.e. shifting left
+set expandtab " Causes space to be inserted in place of tab character
+set autoindent " Copy the indentation of previous line
+
+" ======== Code visiblity =============
+set guifont=Monospace\ 15
+set number 
+set scrolloff=3  " Keep 3 lines always visible
+set relativenumber
+set cursorline
+
+
+" ======== Buffers, Code Editing =========
+set undofile " Enables undoing even after you closed a file
+set ignorecase " Ignores case for all operations
+set smartcase " If u search for lowercase- search will be case insensitive, but if any letter is uppercase, search will be case sensitive
 
 " ============= Vundle ================
 filetype off
