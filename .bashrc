@@ -121,3 +121,7 @@ alias dev='cd ~/Desktop/Developement/'
 
 # added by Anaconda2 4.1.1 installer
 export PATH="/home/subm/anaconda2/bin:$PATH"
+
+# For virtualenv
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh

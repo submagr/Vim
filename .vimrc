@@ -28,7 +28,6 @@ set expandtab " Causes space to be inserted in place of tab character
 set autoindent " Copy the indentation of previous line
 
 " ======== Code visiblity =============
-set guifont=Monospace\ 15
 set number 
 set scrolloff=3  " Keep 3 lines always visible
 set relativenumber
@@ -62,6 +61,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'godlygeek/tabular'      " For clear allignments
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,3 +79,4 @@ colorscheme solarized
 
 " ======== Settings Variable =================
 let mapleader = "/" " This is required for easy motion and nerdcommenter to work
+let NERDTreeQuitOnOpen=1
